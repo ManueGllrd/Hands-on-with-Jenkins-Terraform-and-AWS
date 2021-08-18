@@ -9,7 +9,7 @@ pipeline {
             environment {
                 TFSTATE = sh (returnStdout: true, script: 
                 """
-                aws s3api list-buckets --query 'Buckets[].Name' | grep -wo "\\w*playgroundtfstate\\w*"
+                aws s3api list-buckets --query 'Buckets[].Name' | grep -wo "\\w*playgroundtfstate-manue\\w*"
                 """
                 ).trim()
             }
