@@ -8,7 +8,7 @@ sudo curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash 
 sudo yum install -y nodejs
 
 # Set region
-aws configure set default.region eu-west-2
+aws configure set default.region eu-west-1
 
 # Copy and unzip build artifacts from s3
 sudo aws s3 cp s3://"${ARTIFACT}"/"${UNIQUE_ANIMAL_IDENTIFIER}"-build-artifacts.zip ./
